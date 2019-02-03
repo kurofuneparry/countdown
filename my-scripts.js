@@ -25,7 +25,7 @@ function update() {
 
 	message.innerHTML = "";
 	for (let i=0; i < times.length; i++) {
-		message.innerHTML += times[i] + ": " + date[times[i]]() + "   ";
+		message.innerHTML += "<p>" + times[i] + ": " + date[times[i]]() + "</p>";
 	}
 }
 
