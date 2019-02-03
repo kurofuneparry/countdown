@@ -1,11 +1,11 @@
 function CountDown(date) {
 	this.diff = function() {return new Date(new Date(date - Date.now()))};
-	this.years = function() {return this.diff().getUTCFullYear() - 1970;}
-	this.months = function() {return this.diff().getUTCMonth();}
-	this.days = function() {return this.diff().getUTCDate() - 1;}
-	this.hours = function() {return this.diff().getUTCHours();}
-	this.minutes = function() {return this.diff().getUTCMinutes();}
-	this.seconds = function() {return this.diff().getUTCSeconds();}
+	this.years = function() {return this.diff().getFullYear() - 1970;}
+	this.months = function() {return this.diff().getMonth();}
+	this.days = function() {return this.diff().getDate() - 1;}
+	this.hours = function() {return this.diff().getHours();}
+	this.minutes = function() {return this.diff().getMinutes();}
+	this.seconds = function() {return this.diff().getSeconds();}
 }
 
 times = ["years", "months", "days", "hours", "minutes", "seconds"];
